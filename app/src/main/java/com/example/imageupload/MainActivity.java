@@ -76,7 +76,7 @@ import java.util.Map;
                     byte[] bytes = byteArrayOutputStream.toByteArray();
                     final String base64Image = Base64.encodeToString(bytes, Base64.DEFAULT);
                     RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
-                    String url ="http://192.168.10.2/android/upload.php";
+                    String url ="http://172.16.100.49/android/upload.php";
 
                     StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                             new Response.Listener<String>() {
